@@ -8,9 +8,9 @@ def hello_world():
 
 @app.route('/home')
 def home():
-    return 'Home Page'
+    return 'Home Page!!'
 
 # This will run the app on http://localhost:5000
 if __name__ == '__main__':
     # Run the app in local network
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=8000,debug=True)
