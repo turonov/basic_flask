@@ -6,6 +6,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+@app.route('/home')
+def home():
+    return 'Home Page'
+
 # This will run the app on http://localhost:5000
 if __name__ == '__main__':
     # Run the app in local network
